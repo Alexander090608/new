@@ -1,5 +1,5 @@
 [
-  {
+    {
       "title": "Airplane!",
       "year": 1980,
       "cast": [
@@ -134,8 +134,224 @@
       "href": "Animalympics",
       "extract": "Animalympics is a 1980 animated television film directed by Steven Lisberger and produced by Lisberger Studios for the NBC network. Originally commissioned as two separate specials, it spoofs the Summer and Winter Olympic Games and features the voices of Billy Crystal, Gilda Radner, Harry Shearer and Michael Fremer.",
       "thumbnail": "https://upload.wikimedia.org/wikipedia/en/8/81/Animalympics.jpg",
-          "thumbnail_width": 248,
-          "thumbnail_height": 402
-        }
-      ]
+      "thumbnail_width": 248,
+      "thumbnail_height": 402
+    },
 
+    { 
+      "title": "Any Which Way You Can",
+      "year": 1980,
+      "cast": [
+        "Clint Eastwood",
+        "Geoffrey Lewis",
+        "Sondra Locke",
+        "Ruth Gordon",
+        "William Smith"
+      ],
+      "genres": [
+        "Action",
+        "Comedy"
+      ],
+      "href": "Any_Which_Way_You_Can",
+      "extract": "Any Which Way You Can is a 1980 American action comedy film directed by Buddy Van Horn and starring Clint Eastwood, with Sondra Locke, Geoffrey Lewis, William Smith, and Ruth Gordon in supporting roles. The film is the sequel to the 1978 hit comedy Every Which Way but Loose. The cast of the previous film return as Philo Beddoe (Eastwood) reluctantly comes out of retirement from underground bare-knuckle boxing to take on a champion hired by the mafia, who will stop at nothing to ensure the fight takes place, while the neo-Nazi biker gang Philo humiliated in the previous film also come back for revenge.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/2/29/Any_which_way_you_can.jpg",
+      "thumbnail_width": 256,
+      "thumbnail_height": 392
+    },
+    {
+      "title": "The Apple",
+      "year": 1980,
+      "cast": [
+        "Catherine Mary Stewart"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Musical",
+        "Comedy"
+      ],
+      "href": "The_Apple_(1980_film)",
+      "extract": "The Apple is a 1980 science fiction musical comedy film written and directed by Menahem Golan. It stars Catherine Mary Stewart as a young singer named Bibi, who, in a futuristic 1994, signs to an evil label named Boogalow International Music. It deals with themes of conformity versus rebellion, and makes use of biblical allegory including the tale of Adam and Eve.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/2/2f/The-apple-poster.jpg",
+      "thumbnail_width": 258,
+      "thumbnail_height": 387
+    },
+    {
+      "title": "Atlantic City",
+      "year": 1980,
+      "cast": [
+        "Burt Lancaster",
+        "Susan Sarandon"
+      ],
+      "genres": [
+        "Crime",
+        "Romance"
+      ],
+      "href": "Atlantic_City_(1980_film)",
+      "extract": "Atlantic City is a 1980 romantic-gangster film directed by Louis Malle, and starring Burt Lancaster, Susan Sarandon, Kate Reid, Robert Joy, Hollis McLaren, Michel Piccoli and Al Waxman. A Canadian-French co-production filmed in late 1979, it was released in France and Germany in September 1980 and in the United States later that year by Paramount Pictures. The script was written by John Guare.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/a4/Atlantic_City_%281980_film%29.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 333
+    },
+    {
+      "title": "The Attic",
+      "year": 1980,
+      "cast": [
+        "Carrie Snodgress",
+        "Ray Milland"
+      ],
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Drama",
+        "War"
+      ],
+      "href": "The_Attic_(1980_film)",
+      "extract": "The Attic is a 1980 American psychological horror drama film directed by George Edwards and starring Carrie Snodgress and Ray Milland.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/59/The_Attic_%281980_poster%29.jpg",
+      "thumbnail_width": 253,
+      "thumbnail_height": 394
+    },
+    {
+      "title": "The Awakening",
+      "year": 1980,
+      "cast": [
+        "Charlton Heston",
+        "Susannah York",
+        "Stephanie Zimbalist"
+      ],
+      "genres": [
+        "Horror"
+      ],
+      "href": "The_Awakening_(1980_film)",
+      "extract": "The Awakening is a 1980 British horror film directed by Mike Newell in his directorial debut and starring Charlton Heston, Susannah York, and Stephanie Zimbalist. It is the third film version of Bram Stoker's 1903 novel The Jewel of Seven Stars, following the 1970 television adaptation as The Curse of the Mummy for the TV series Mystery and Imagination, and the 1971 theatrical film by Hammer, Blood from the Mummy's Tomb. It was released by Warner Bros.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/8/89/Awakeningposter1980.jpg",
+      "thumbnail_width": 254,
+      "thumbnail_height": 390
+    },
+    {
+      "title": "The Baltimore Bullet",
+      "year": 1980,
+      "cast": [
+        "James Coburn",
+        "Omar Sharif",
+        "Ronee Blakley"
+      ],
+      "genres": [
+        "Comedy"
+      ],
+      "href": "The_Baltimore_Bullet",
+      "extract": "The Baltimore Bullet is a 1979 American comedy film based on the adventures of two pool hustlers in the United States.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/3c/Thebaltimorebullet_gip.jpg",
+      "thumbnail_width": 258,
+      "thumbnail_height": 387
+    },
+    {
+      "title": "Battle Beyond the Stars",
+      "year": 1980,
+      "cast": [
+        "Richard Thomas",
+        "Robert Vaughn",
+        "John Saxon",
+        "Sam Jaffe",
+        "Darlanne Fluegel",
+        "George Peppard",
+        "John Saxon"
+      ],
+      "genres": [
+        "Science Fiction"
+      ],
+      "href": "Battle_Beyond_the_Stars",
+      "extract": "Battle Beyond the Stars is a 1980 American space opera film produced by Roger Corman, directed by Jimmy T. Murakami, and starring Richard Thomas, Robert Vaughn, George Peppard, John Saxon, Sybil Danning and Darlanne Fluegel. Intended as a futuristic \"Magnificent Seven in outer space\", the screenplay was written by John Sayles with the score by James Horner and special effects designed by filmmaker James Cameron. The film was theatrically released by Corman's New World Pictures and was a moderate box office success, despite receiving mixed reviews from critics.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/b/b5/Battlebeyondthestars.jpg",
+      "thumbnail_width": 203,
+      "thumbnail_height": 302
+    },
+    {
+      "title": "Below the Belt",
+      "year": 1980,
+      "cast": [
+        "Regina Baff",
+        "John C. Becher",
+        "Mildred Burke",
+        "(as herself)",
+        "Firesign Theatre"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "href": null
+    },
+    {
+      "title": "Beyond Evil",
+      "year": 1980,
+      "cast": [
+        "John Saxon",
+        "Lynda Day George"
+      ],
+      "genres": [
+        "Horror",
+        "Supernatural"
+      ],
+      "href": "Beyond_Evil",
+      "extract": "Beyond Evil is a 1980 American supernatural horror film directed by Herb Freed and starring John Saxon and Lynda Day George. Its plot follows an architect who suspects his wife is possessed by a former resident of the historic colonial mansion they have just moved into.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/b/b2/TromaEvil.jpg",
+      "thumbnail_width": 254,
+      "thumbnail_height": 386
+    },
+    {
+      "title": "The Big Brawl",
+      "year": 1980,
+      "cast": [
+        "Jackie Chan"
+      ],
+      "genres": [
+        "Action",
+        "Comedy",
+        "Martial Arts"
+      ],
+      "href": "The_Big_Brawl",
+      "extract": "The Big Brawl, also known as Battle Creek Brawl, is a 1980 martial arts action comedy film, which marked Jackie Chan's first attempt to break into the American movie Hollywood market. A joint American and Hong Kong action film production, it was directed by Robert Clouse and featured much of the crew from Enter the Dragon (1973).",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/b/bd/Bigbrawlposter.jpg",
+      "thumbnail_width": 257,
+      "thumbnail_height": 388
+    },
+    {
+      "title": "The Big Red One",
+      "year": 1980,
+      "cast": [
+        "Lee Marvin",
+        "Mark Hamill",
+        "Robert Carradine"
+      ],
+      "genres": [
+        "War"
+      ],
+      "href": "The_Big_Red_One",
+      "extract": "The Big Red One is a 1980 American epic war film written and directed by Samuel Fuller, and starring Lee Marvin alongside an ensemble supporting cast, including Mark Hamill, Robert Carradine, Siegfried Rauch, Bobby Di Cicco, and Kelly Ward.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/6/60/Big_red_one_post.jpg",
+      "thumbnail_width": 254,
+      "thumbnail_height": 392
+    },
+    {
+      "title": "The Black Marble",
+      "year": 1980,
+      "cast": [
+        "Robert Foxworth",
+        "Paula Prentiss",
+        "Harry Dean Stanton"
+      ],
+      "genres": [
+        "Crime",
+        "Comedy",
+        "Mystery",
+        "Romance"
+      ],
+      "href": "The_Black_Marble",
+      "extract": "The Black Marble is a 1980 mystery/romantic comedy film directed by Harold Becker and starring Robert Foxworth, Paula Prentiss and Harry Dean Stanton. It is based on the 1978 novel by Joseph Wambaugh.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/13/The_Black_Marble.jpg",
+      "thumbnail_width": 254,
+      "thumbnail_height": 392
+    }
+    
+  ]
