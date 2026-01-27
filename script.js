@@ -43,6 +43,19 @@ function loadJSONMovies() {
     req.send();
 }
 
+// Load custom added movies from localStorage
+function loadCustomMovies() {
+    let customMovie = sessionStorage.getItem('customMovies');
+    const customMovies = JSON.parse(customMovie); //customMovies should be empty
+    const gridContainer = document.getElementById('grid-container');
+
+    if (gridContainer && customMovies.length > 0) {
+        customMovies.forEach(function(movie) {
+            gridContainer.appendChild(createMovieCard(movie));
+        });
+    }
+}
+
 // Handle form submission
 const form = document.getElementById('addMovieForm');
 if (form) {
@@ -78,24 +91,12 @@ if (form) {
     });
 }
 
-// Load custom added movies from localStorage
-function loadCustomMovies() {
-    let customMovie = sessionStorage.getItem('customMovies');
-    const customMovies = JSON.parse(customMovie); //customMovies should be empty
-    const gridContainer = document.getElementById('grid-container');
-
-    if (gridContainer && customMovies.length > 0) {
-        customMovies.forEach(function(movie) {
-            gridContainer.appendChild(createMovieCard(movie));
-        });
-    }
-}
 
 //Save current movie list displayed
-const save = document.getElementById('save');
-save.addEventListener('click', function() {
- //WIP
-});
+// const save = document.getElementById('save');
+// save.addEventListener('click', function() {
+//  //WIP
+// });
 // Load movies when page loads
 window.addEventListener('DOMContentLoaded', function() {
     loadJSONMovies();
