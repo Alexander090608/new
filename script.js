@@ -45,8 +45,8 @@ function loadJSONMovies() {
 
 // Load custom added movies from localStorage
 function loadCustomMovies() {
-    let customMovie = sessionStorage.getItem('customMovies');
-    const customMovies = JSON.parse(customMovie); //customMovies should be empty
+    let customMovie = sessionStorage.getItem('customMovies') || '[]'; // Default to empty array if no custom movies
+    const customMovies = JSON.parse(customMovie); 
     const gridContainer = document.getElementById('grid-container');
 
     if (gridContainer && customMovies.length > 0) {
@@ -75,14 +75,16 @@ if (form) {
         };
 
         // Get existing custom movies from localStorage
-        let customMovie = sessionStorage.getItem('customMovies');
+        let customMovie = sessionStorage.getItem('customMovies') || '[]'; // Default to empty array if no custom movies
         let customMovies = JSON.parse(customMovie);
         customMovies.push(newMovie);
         sessionStorage.setItem('customMovies', JSON.stringify(customMovies));//takes new customMovies and turns it back to JSON
 
         // Show success message
         const result = document.querySelector('.result');
-        result.style.display = 'block';
+        if (result) { //checks if result exists
+            result.style.display = 'block';
+        }
 
         // Optionally redirect to home page after 1 second
         setTimeout(()=>{
