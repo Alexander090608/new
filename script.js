@@ -85,7 +85,7 @@ if (form) {
         result.style.display = 'block';
 
         // Optionally redirect to home page after 1 second
-        setTimeout(function(){
+        setTimeout(()=>{
             window.location.href = 'index.html';
         }, 1000);
     });
