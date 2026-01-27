@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="addMovie.css">
+    <title>Movie Watchlist</title>
 </head>
+<header>
+        <!--nav bar-->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="addMovie.html">Add +</a></li>
+            <li><a href="#save">Save</a></li>
+            <li><a href="#load">Load</a></li>
+          </ul>
+        </nav>
+    </header>
 <body>
-    
+    <fieldset>
+        <legend>Add Movie</legend>
+        <form id="addMovieForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" required><br><br>
+
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" required><br><br>
+
+            <input type="submit" value="Add Movie">
+        </form>
+    </fieldset>
+
+    <h1 class="result">form submitted!</h1>
+
+    <script src="script.js"></script>
 </body>
 </html>

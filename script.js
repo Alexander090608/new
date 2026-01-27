@@ -1,35 +1,101 @@
-const req = new XMLHttpRequest();
+// Function to create and display a movie card
+function createMovieCard(movie) {
+    let card = document.createElement("div");
+    card.classList.add("card");
 
-req.onreadystatechange = function() {
-    if (req.readyState === 4 && req.status === 200) {
-        let movies = JSON.parse(req.responseText);
-        console.log(movies[1].year);
+    let castList = movie.cast.join(', ') 
+    let genresList = movie.genres.join(', ')
 
-        const gridContainer = document.getElementById('grid-container');
+    let textData =
+        "<div class='movie-title'>" + movie.title + "</div>" +
+        "<div class='movie-year'>Released: " + movie.year + "</div>";
+    
+    if (movie.cast) {
+        textData += "<div class='movie-cast'>Cast: " + castList + "</div>";
+    }
+    textData += "<div class='movie-genres'>Genres: " + genresList + "</div>";
 
-        movies.forEach(function(movie) {
-            let card = document.createElement("div");
-            card.classList.add("card");
+    card.innerHTML = textData;
 
-            let castList = movie.cast.join(', ') 
-            let genresList = movie.genres.join(', ') 
+    if (movie.thumbnail) {
+        card.style.backgroundImage = "url(" + movie.thumbnail + ")";
+    }
 
-            let textData =
-                "<div class='movie-title'>" + movie.title + "</div>" +
-                "<div class='movie-year'>Released: " + movie.year + "</div>" +
-                "<div class='movie-cast'>Cast: " + castList + "</div>" +
-                "<div class='movie-genres'>Genres: " + genresList + "</div>";
+    return card;
+}
 
-            card.innerHTML = textData;
+// Load JSON movies
+function loadJSONMovies() {
+    const req = new XMLHttpRequest();
 
-            if (movie.thumbnail) {
-                card.style.backgroundImage = "url(" + movie.thumbnail + ")";
-            }
+    req.onreadystatechange = function() {
+        if (req.readyState === 4 && req.status === 200) {
+            let movies = JSON.parse(req.responseText);
+            const gridContainer = document.getElementById('grid-container');
 
-            gridContainer.appendChild(card);
+                movies.forEach(function(movie) {
+                    gridContainer.appendChild(createMovieCard(movie));
+                });
+        }
+    }
+
+    req.open("GET", "movieList.json", true);
+    req.send();
+}
+
+// Load custom added movies from localStorage
+function loadCustomMovies() {
+    const customMovies = JSON.parse(localStorage.getItem('customMovies')) || [];
+    const gridContainer = document.getElementById('grid-container');
+
+    if (gridContainer && customMovies.length > 0) {
+        customMovies.forEach(function(movie) {
+            gridContainer.appendChild(createMovieCard(movie));
         });
     }
 }
 
-req.open("GET", "movieList.json", true);
-req.send();
+// Handle form submission
+const form = document.getElementById('addMovieForm');
+if (form) {
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const title = document.getElementById('title').value;
+        const year = parseInt(document.getElementById('year').value); //parseInt to convert string to number
+        const genre = document.getElementById('genre').value;
+
+        // Create new movie object
+        const newMovie = {
+            title: title,
+            year: year,
+            genres: [genre], // Store genre as an array 
+            cast: []
+        };
+
+        // Get existing custom movies from localStorage
+        let customMovies = JSON.parse(localStorage.getItem('customMovies')) || [];
+        customMovies.push(newMovie);
+        localStorage.setItem('customMovies', JSON.stringify(customMovies));
+
+        // Show success message
+        const result = document.querySelector('.result');
+        if (result) {
+            result.style.display = 'block';
+        }
+
+        // Reset form
+        form.reset();
+
+        // Optionally redirect to home page after 1 second
+        setTimeout(() => {
+            window.location.href = 'index.html';
+        }, 1000);
+    });
+}
+
+// Load movies when page loads
+window.addEventListener('DOMContentLoaded', function() {
+    loadJsonMovies();
+    loadCustomMovies();
+});
