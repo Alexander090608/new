@@ -43,18 +43,6 @@ function loadJSONMovies() {
     req.send();
 }
 
-// Load custom added movies from localStorage
-function loadCustomMovies() {
-    const customMovies = JSON.parse(localStorage.getItem('customMovies')) || [];
-    const gridContainer = document.getElementById('grid-container');
-
-    if (gridContainer && customMovies.length > 0) {
-        customMovies.forEach(function(movie) {
-            gridContainer.appendChild(createMovieCard(movie));
-        });
-    }
-}
-
 // Handle form submission
 const form = document.getElementById('addMovieForm');
 if (form) {
@@ -74,28 +62,42 @@ if (form) {
         };
 
         // Get existing custom movies from localStorage
-        let customMovies = JSON.parse(localStorage.getItem('customMovies')) || [];
+        let customMovie = sessionStorage.getItem('customMovies');
+        let customMovies = JSON.parse(customMovie);
         customMovies.push(newMovie);
-        localStorage.setItem('customMovies', JSON.stringify(customMovies));
+        sessionStorage.setItem('customMovies', JSON.stringify(customMovies));//takes new customMovies and turns it back to JSON
 
         // Show success message
         const result = document.querySelector('.result');
-        if (result) {
-            result.style.display = 'block';
-        }
-
-        // Reset form
-        form.reset();
+        result.style.display = 'block';
 
         // Optionally redirect to home page after 1 second
-        setTimeout(() => {
+        setTimeout(function(){
             window.location.href = 'index.html';
         }, 1000);
     });
 }
 
+// Load custom added movies from localStorage
+function loadCustomMovies() {
+    let customMovie = sessionStorage.getItem('customMovies');
+    const customMovies = JSON.parse(customMovie); //customMovies should be empty
+    const gridContainer = document.getElementById('grid-container');
+
+    if (gridContainer && customMovies.length > 0) {
+        customMovies.forEach(function(movie) {
+            gridContainer.appendChild(createMovieCard(movie));
+        });
+    }
+}
+
+//Save current movie list displayed
+const save = document.getElementById('save');
+save.addEventListener('click', function() {
+ //WIP
+});
 // Load movies when page loads
 window.addEventListener('DOMContentLoaded', function() {
-    loadJsonMovies();
+    loadJSONMovies();
     loadCustomMovies();
 });
